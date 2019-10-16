@@ -1,0 +1,35 @@
+.ant-carousel .slick-slide {
+    height: 180px;
+    line-height: 100px;
+    overflow: hidden;
+    /* background: red; */
+}
+
+//表格
+.ant-table-small {
+    border: none;
+}
+
+//表格内字体大小、颜色
+.businessTable {
+    color: rgba(255, 255, 255, 0.87);
+    font-size: 15px;
+    font-family: "FzLtHbJt", sans-serif;
+}
+
+//消除hover效果
+.businessTable:hover td{
+    background-color: transparent !important
+}
+
+//数据之间的线
+.ant-table-tbody > tr > td {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+//表头样式
+.ant-table-thead > tr > th {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+    border-bottom: none !important;
+    color: white;
+}

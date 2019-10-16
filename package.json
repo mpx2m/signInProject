@@ -1,0 +1,60 @@
+{
+  "name": "bigscreen_v2",
+  "version": "0.0.1",
+  "description": "the bigscreen_v2 project",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack -p --progress --mode production",
+    "prestart": "npm run build",
+    "start": "httpster -d ./dist/ -p 6691 & opener http://localhost:6691",
+    "preview": "httpster -d ./dist/ -p 6692 & opener http://localhost:6692",
+    "json-server": "json-server --watch db2.json --port 6694",
+    "dev": "webpack-dev-server --progress --mode development"
+  },
+  "keywords": [
+    "react"
+  ],
+  "author": "FS",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.1.5",
+    "@babel/core": "^7.1.6",
+    "@babel/plugin-proposal-class-properties": "^7.1.0",
+    "@babel/plugin-proposal-decorators": "^7.1.6",
+    "@babel/plugin-proposal-export-namespace-from": "^7.0.0",
+    "@babel/plugin-proposal-function-sent": "^7.1.0",
+    "@babel/plugin-proposal-json-strings": "^7.0.0",
+    "@babel/plugin-proposal-numeric-separator": "^7.0.0",
+    "@babel/plugin-proposal-throw-expressions": "^7.0.0",
+    "@babel/plugin-syntax-dynamic-import": "^7.0.0",
+    "@babel/plugin-syntax-import-meta": "^7.0.0",
+    "@babel/preset-env": "^7.1.6",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.4",
+    "babel-plugin-import": "^1.11.0",
+    "css-loader": "^1.0.1",
+    "httpster": "^1.0.4",
+    "json-server": "^0.14.2",
+    "mini-css-extract-plugin": "^0.4.5",
+    "node-sass": "^4.12.0",
+    "opener": "^1.5.1",
+    "optimize-css-assets-webpack-plugin": "^5.0.1",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "uglifyjs-webpack-plugin": "^2.0.1",
+    "webpack": "^4.26.0",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.10"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.0.0",
+    "antd": "^3.9.2",
+    "axios": "^0.18.0",
+    "echarts": "^4.2.0-rc.2",
+    "echarts-for-react": "^2.0.15-beta.0",
+    "react": "^16.7.0-alpha.2",
+    "react-dom": "^16.7.0-alpha.2",
+    "react-router-dom": "^4.3.1"
+  }
+}
