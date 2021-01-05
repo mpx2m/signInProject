@@ -51,7 +51,7 @@
   "dependencies": {
     "@babel/polyfill": "^7.0.0",
     "antd": "^3.9.2",
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "echarts": "^4.2.0-rc.2",
     "echarts-for-react": "^2.0.15-beta.0",
     "react": "^16.7.0-alpha.2",
